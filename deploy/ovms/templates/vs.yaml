@@ -1,0 +1,15 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: openvino-model-server-vs
+spec:
+  gateways:
+  - public-gateway.istio-system.svc.cluster.local
+  hosts:
+  - 'openvino.o360-platform.ninja'
+  http:
+  - route:
+    - destination:
+        host: openvino-model-server.msu-workflow-dev.svc.cluster.local
+        port:
+          number: 8080
