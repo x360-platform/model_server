@@ -6,7 +6,7 @@ spec:
   gateways:
   - public-gateway.istio-system.svc.cluster.local
   hosts:
-  - 'openvino.o360-platform.ninja'
+  - 'openvino.c360-platform.ninja'
   http:
   - route:
     - destination:
