@@ -31,7 +31,7 @@ spec:
         {{ end }}
         {{ if .Values.gcp_creds_secret_name }}
         - name: GOOGLE_APPLICATION_CREDENTIALS
-          value: /secret/gcp-creds.json
+          value: /secret/credentials.json
         {{ end }}
         {{ if .Values.aws_access_key_id }}
         - name: AWS_ACCESS_KEY_ID
@@ -83,7 +83,7 @@ spec:
       {{ if .Values.gcp_creds_secret_name }}
       - name: gcpcreds
         secret:
-          secretName: gcpcreds
+          secretName: {{ .Values.gcp_creds_secret_name }}
       {{ end }}
       {{ if .Values.config_configmap_name }}
       - name: config
