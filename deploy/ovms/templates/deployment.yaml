@@ -59,6 +59,7 @@ spec:
                "--config_path", "/config/config.json",
         {{ else }}
                "model",
+               "--base_path", "{{ .Values.base_path }}",
                "--model_path", "{{ .Values.model_path }}",
                "--model_name", "{{ .Values.model_name }}",
         {{ end }}
