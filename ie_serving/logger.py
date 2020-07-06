@@ -17,7 +17,7 @@
 import logging
 from ie_serving.config import GLOBAL_CONFIG
 
-available_lvl_of_logger = ['INFO', 'DEBUG', 'ERROR']
+available_lvl_of_logger = ['INFO', 'ERROR']
 
 
 def get_logger_lvl():
