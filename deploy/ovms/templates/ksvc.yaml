@@ -79,15 +79,15 @@ spec:
           readOnly: true
         {{ end }}
         {{ if or .Values.gcp_creds_secret_name .Values.config_configmap_name }}
-        volumes:
-        {{ end }}
-        {{ if .Values.gcp_creds_secret_name }}
-        - name: gcpcreds
-          secret:
-            secretName: gcpcreds
-        {{ end }}
-        {{ if .Values.config_configmap_name }}
-        - name: config
-          configMap:
-            name: {{ .Values.config_configmap_name }}
-        {{ end }}
+      volumes:
+      {{ end }}
+      {{ if .Values.gcp_creds_secret_name }}
+      - name: gcpcreds
+        secret:
+          secretName: gcpcreds
+      {{ end }}
+      {{ if .Values.config_configmap_name }}
+      - name: config
+        configMap:
+          name: {{ .Values.config_configmap_name }}
+      {{ end }}
