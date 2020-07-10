@@ -2,7 +2,6 @@ apiVersion: serving.knative.dev/v1
 kind: Service
 metadata:
   name: example-openvino-model-server-ksvc
-  namespace: msu-workflow-dev
 spec:
   template:
     metadata:
