@@ -19,6 +19,7 @@ spec:
       - name: ovms-resnet
         image: intelaipg/openvino-model-server:latest
         ports:
+          - containerPort: 8080
           - containerPort: 8081
 #         readinessProbe: 
 #           tcpSocket:
