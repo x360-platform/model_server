@@ -21,11 +21,11 @@ spec:
         image: intelaipg/openvino-model-server:latest
         ports:
           - containerPort: 8080
-        readinessProbe: 
-          tcpSocket:
-            port: 8080
-          initialDelaySeconds: 5
-          periodSeconds: 10
+#         readinessProbe: 
+#           tcpSocket:
+#             port: 8080
+#           initialDelaySeconds: 5
+#           periodSeconds: 10
         {{ if or .Values.gcp_creds_secret_name .Values.aws_access_key_id .Values.aws_secret_access_key .Values.aws_region .Values.s3_compat_api_endpoint }}
         env:
         {{ end }}
