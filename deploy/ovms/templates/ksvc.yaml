@@ -21,7 +21,7 @@ spec:
         image: intelaipg/openvino-model-server:latest
         ports:
           - containerPort: 8080
-        readinessProbe:
+        readinessProbe: 
           tcpSocket:
             port: 8080
           initialDelaySeconds: 5
