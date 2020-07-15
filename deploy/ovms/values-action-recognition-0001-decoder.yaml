@@ -2,7 +2,7 @@ replicas: 1
 
 config_configmap_name: ""
 
-# base_path: "https://download.01.org/opencv/2020/openvinotoolkit/2020.2/open_model_zoo/models_bin/1/action-recognition-0001-decoder/FP16/"
+# base_path: "https://download.01.org/opencv/2020/openvinotoolkit/2020.2/open_model_zoo/models_bin/3/action-recognition-0001-decoder/FP16/"
 
 model_name: "action-recognition-0001-decoder"
 model_path: gs://openvino-model-zoo/action-recognition-0001-decoder
