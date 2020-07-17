@@ -1,0 +1,15 @@
+replicas: 1
+
+config_configmap_name: ""
+
+# base_path: "https://download.01.org/opencv/2020/openvinotoolkit/2020.2/open_model_zoo/models_bin/3/person-detection-asl-0001/FP16/"
+
+model_name: "person-detection-asl-0001"
+model_path: gs://openvino-model-zoo/person-detection-asl-0001
+
+gcp_creds_secret_name: "openvino-model-server-secret"
+
+aws_access_key_id: ""
+aws_secret_access_key: ""
+aws_region: ""
+s3_compat_api_endpoint: ""
