@@ -12,3 +12,4 @@
 *__pycache__/
 *.cache
 .cache
+example_client/data.json
