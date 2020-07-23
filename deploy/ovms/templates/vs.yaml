@@ -9,7 +9,7 @@ spec:
   - 'openvino.c360-platform.ninja'
   http:
     - match:
-      - port: 80
+      - port: 8081
       route:
       - destination:
           host: openvino-model-server.msu-workflow-dev.svc.cluster.local
