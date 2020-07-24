@@ -112,7 +112,7 @@ def parse_config(args):
                                                 args.rest_workers])
         process_thread.setDaemon(True)
         process_thread.start()
-    #start_server(models=models, max_workers=args.grpc_workers, port=args.port)
+    start_server(models=models, max_workers=args.grpc_workers, port=args.port)
 
 
 def parse_one_model(args):
