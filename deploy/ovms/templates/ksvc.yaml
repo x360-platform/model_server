@@ -1,7 +1,7 @@
  apiVersion: serving.knative.dev/v1
  kind: Service
  metadata:
-   name: example-openvino-model-server-ksvc
+   name: {{ .Values.model_name }}
  spec:
    template:
      metadata:
@@ -16,7 +16,7 @@
          autoscaling.knative.dev/maxScale: "100"
      spec:
        containers:
-       - name: ovms-resnet
+       - name: ovms
          image: intelaipg/openvino-model-server:latest
          ports:
 #         - containerPort: 8080
