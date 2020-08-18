@@ -4,7 +4,7 @@ config_configmap_name: ""
 
 # base_path: "https://download.01.org/opencv/2020/openvinotoolkit/2020.2/open_model_zoo/models_bin/3/action-recognition-0001-decoder/FP16/"
 
-model_name: "frozen_model"
+model_name: "frozen-model"
 model_path: gs://openvino-model-zoo/custom-test
 
 gcp_creds_secret_name: "openvino-model-server-secret"
